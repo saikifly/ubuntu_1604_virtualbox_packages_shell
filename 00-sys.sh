@@ -129,5 +129,6 @@ net.ipv6.conf.lo.disable_ipv6 = 1
 # This will ensure that immediately subsequent connections use the new values
 net.ipv4.route.flush = 1
 # net.ipv6.route.flush = 1
+vm.overcommit_memory = 1
 " >/etc/sysctl.conf
 sysctl -p
