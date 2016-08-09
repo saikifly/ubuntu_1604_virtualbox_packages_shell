@@ -22,7 +22,7 @@ if [ ! -d "/opt/app/redis/etc" ]; then
   mkdir -p /opt/app/redis/etc
 fi
 
-cp files/redis_6379.conf /opt/app/redis/etc/6379.conf
+cp files/redis-6379.conf /opt/app/redis/etc/6379.conf
 
 
 if [ ! -d "/data/logs/redis" ]; then
@@ -35,8 +35,8 @@ if [ ! -d "/data/redis/6379" ]; then
 fi
 
 
-cp files/redis_6379 /etc/init.d/redis_6379
-chmod +x  /etc/init.d/redis_6379
-systemctl enable redis_6379
+cp files/redis-6379 /etc/init.d/redis-6379
+chmod +x  /etc/init.d/redis-6379
+systemctl enable redis-6379
 
 rm -rf /opt/down/${soft}
