@@ -1,6 +1,6 @@
 #!/bin/bash 
 soft=openresty
-version=1.9.15.1
+version=1.11.2.1
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 

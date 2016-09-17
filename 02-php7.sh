@@ -1,13 +1,13 @@
 #!/bin/bash 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 soft=php
-version=7.0.9
+version=7.0.11
 extensions=(
-"yaf" "3.0.3" ""
+"yaf" "3.0.4" ""
 "yar" "2.0.1" "--enable-msgpack"
 "yac" "2.0.1" ""
 "SeasLog" "1.6.2" ""
-"swoole" "1.8.8" "--enable-thread --enable-async-redis --enable-sockets"
+"swoole" "1.8.11" "--enable-thread --enable-async-redis --enable-sockets"
 "msgpack" "2.0.1" ""
 "yaconf" "1.0.2" ""
 "redis" "3.0.0" ""

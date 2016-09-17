@@ -1,10 +1,10 @@
 #!/bin/bash
 soft=GraphicsMagick
-version=1.3.24
+version=1.3.25
 test -d /opt/down/${soft} && rm -rf /opt/down/${soft}
 mkdir -p /opt/down/${soft} 
 cd /opt/down/${soft}
-wget http://downloads.sourceforge.net/project/graphicsmagick/graphicsmagick/1.3.24/${soft}-${version}.tar.xz
+wget http://downloads.sourceforge.net/project/graphicsmagick/graphicsmagick/${version}/${soft}-${version}.tar.xz
 tar xf  ${soft}-${version}.tar.xz
 cd  ${soft}-${version}
 ./configure --prefix=/opt/app/graphicsmagick --with-windows-font-dir=/opt/app/ttf --enable-shared

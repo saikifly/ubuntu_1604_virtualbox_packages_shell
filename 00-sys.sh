@@ -1,7 +1,7 @@
 #!/bin/bash 
 apt-get update
 apt-get -y upgrade
-apt-get -y install libwebp-dev  libgraphviz-dev  libgif-dev libtiff5-dev libjbig-dev build-essential checkinstall   libx11-dev libxext-dev zlib1g-dev libpng12-dev   libjpeg-dev libfreetype6-dev libxml2-dev  zlib1g-dev  libfreetype6-dev curl sudo zerofree openssh-server vim  htop iftop iotop strace ltrace screen unzip build-essential module-assistant  libpcre3-dev libgd-dev libpng12-dev  libjpeg-dev libssl-dev autoconf libhiredis-dev libnghttp2-dev libcurl4-openssl-dev
+apt-get -y install libwebp-dev  libgraphviz-dev  libgif-dev libtiff5-dev libjbig-dev build-essential checkinstall   libx11-dev libxext-dev zlib1g-dev libpng12-dev   libjpeg-dev libfreetype6-dev libxml2-dev  zlib1g-dev  libfreetype6-dev curl sudo zerofree openssh-server vim  htop iftop iotop strace ltrace screen unzip build-essential module-assistant  libpcre3-dev libgd-dev libpng12-dev  libjpeg-dev libssl-dev autoconf libhiredis-dev libnghttp2-dev libcurl4-openssl-dev libboost-dev libboost-program-options-dev gperf libevent-dev uuid-dev libmemcached-dev
 apt-get -y autoremove
 echo "GRUB_DEFAULT=0
 GRUB_TIMEOUT=0
