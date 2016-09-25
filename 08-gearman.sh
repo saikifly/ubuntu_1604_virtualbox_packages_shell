@@ -15,7 +15,7 @@ wget https://launchpad.net/gearmand/1.2/${version}/+download/${soft}-${version}.
 tar xf  ${soft}-${version}.tar.gz
 cd  ${soft}-${version}
 ./configure --prefix=/opt/app/gearmand --with-sqlite3=no --disable-libdrizzle  --disable-libpq  --with-mysql=yes
-make && make install
+make -j 8 && make install
 ln -s /opt/app/gearmand/bin/gearman /opt/app/bin/gearman
 ln -s /opt/app/gearmand/bin/gearadmin /opt/app/bin/gearadmin
 cd $DIR

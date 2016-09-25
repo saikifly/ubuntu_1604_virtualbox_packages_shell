@@ -23,7 +23,7 @@ cd  ${soft}-${version}
 
 ./configure  --prefix=/opt/app/php-7.0 --enable-fpm --with-config-file-path=/opt/app/php-7.0/etc --with-config-file-scan-dir=/opt/app/php-7.0/etc/conf.d --disable-cgi --disable-ipv6 --enable-pcntl --enable-gd-native-ttf --with-freetype-dir --with-gd --enable-bcmath --enable-sysvmsg --enable-sysvsem --enable-sysvshm --enable-mysqlnd --enable-exif --enable-sockets --enable-mbstring --enable-zip --with-jpeg-dir --with-openssl --with-png-dir --with-zlib --with-mhash --with-curl --with-mysqli=mysqlnd --with-pdo-mysql=mysqlnd
 
-make && make install
+make -j 8 && make install
 export PATH=$PATH:/opt/app/php-7.0/bin
 cd /opt/down/${soft}
 
@@ -35,7 +35,7 @@ do
 	cd ${extensions[i]}-${extensions[i+1]}
 	phpize
     ./configure ${extensions[i+2]}
-	make && make install
+	make -j 8 && make install
 done  
 
 cd $DIR
